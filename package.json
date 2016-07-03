@@ -1,0 +1,20 @@
+{
+  "name": "express-eg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishabh280693/express.git"
+  },
+  "author": "Rishabh Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishabh280693/express/issues"
+  },
+  "homepage": "https://github.com/rishabh280693/express#readme",
+  "dependencies": {}
+}
