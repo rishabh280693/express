@@ -16,5 +16,11 @@
     "url": "https://github.com/rishabh280693/express/issues"
   },
   "homepage": "https://github.com/rishabh280693/express#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "nodemon": "^1.9.2"
+  }
 }
