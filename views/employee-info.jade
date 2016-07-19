@@ -1,0 +1,37 @@
+
+doctype
+html
+  head
+    title #{title} - My Site
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    link(href="../css/style.css",rel="stylesheet")
+
+  body
+    include header.jade
+    
+    - var empInfo
+    each empData in data
+      if empData.id == title
+        - empInfo = empData
+        
+    div.emp-first-info
+      img(src= empInfo.avatar_img)
+      h3= empInfo.name
+      h5= empInfo.job_title
+
+    div.emp-second-info.col-md-6
+      table.col-md-6.table.table-striped
+        tr
+          td Employee Name
+          td= empInfo.email
+        tr
+          td Employee Phone Number
+          td= empInfo.phone
+        tr
+          td Employee Username
+          td= empInfo.username
+            
+
+    include footer.jade
+
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.2.4.js')

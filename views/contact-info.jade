@@ -1,0 +1,26 @@
+doctype
+html
+  head
+    title #{title} - My Site
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    link(href="../css/style.css",rel="stylesheet")
+
+  body
+    include header.jade
+    
+    div.col-md-6.social-urls
+      a(href="https://twitter.com/vermarish")
+        img(src="images/twitter-logo.png")
+      div 
+        a(href="https://twitter.com/vermarish") Find me on twitter
+
+    div.col-md-6.social-urls
+      a(href="https://github.com/rishabh280693/")
+        img(src="images/github-logo.png")
+      div
+        a(href="https://github.com/rishabh280693/") Find me on github
+            
+
+    include footer.jade
+
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.2.4.js')

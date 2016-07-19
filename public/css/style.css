@@ -1,0 +1,27 @@
+.employee-div {
+	padding:15px;
+	border-bottom:1px solid #d3d3d3;
+}
+
+.emp-first-info {
+	padding-bottom: 30px;
+	padding-left:15px;
+}
+
+.social-urls {
+	text-align:center;
+	margin-top: 30px;
+}
+
+.social-urls img {
+	width: 25%;
+  height: 160px;
+}
+
+.social-urls a {
+	text-decoration: none;
+}
+
+.social-urls div {
+	padding-top: 25px;
+}

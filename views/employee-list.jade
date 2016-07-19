@@ -1,0 +1,33 @@
+doctype
+html
+  head
+    title #{title} - My Site
+    link(href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous")
+    link(href="css/style.css",rel="stylesheet")
+  body
+    //- header
+    //-   nav.navbar.navbar-default
+    //-     ul.nav.navbar-nav
+    //-       li 
+    //-         a(href="#") Employee Directory
+    //-       li 
+    //-         a(href="#") Home
+    //-       li 
+    //-         a(href="#") Contact
+    include header.jade
+    
+    div.col-md-4
+      each val in data
+        div.employee-div.col-md-12
+          a(href= "employees/" + val.id)
+            img(src= val.avatar_img).col-md-2
+          a(href= "employees/" + val.id)
+            span.emp-name.col-md-10= val.name
+          span.emp-job-title.col-md-10= val.job_title
+
+
+    //- footer.col-md-12
+    //-   p Running on node with Express, Jade
+    include footer.jade
+
+    script(type='text/javascript' src='https://code.jquery.com/jquery-2.2.4.js')
